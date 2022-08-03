@@ -40,7 +40,7 @@ int findMinimalPath(int mat[][]) {
           dist[i][j] = Integer.MAX_VALUE;
       }
   }
-  dist[0][0] = 0;
+  dist[0][0] = mat[0][0];
   Queue<Pair<Integer,Integer>> queue = new  LinkedList<Pair<Integer,Integer>>();
 
   //BFS
